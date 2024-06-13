@@ -105,3 +105,16 @@ handlers.ts
   ]
 
 ```
+
+
+### Run test
+
+```js
+  npm t
+    or 
+  npm run test
+    or
+  npm run test:ui
+
+
+```

@@ -6,7 +6,7 @@ import User from './index';
 describe('List', () => {
     test('Empty User ', () => {
         const  users : userProps[] = []
-        render(<User  userList={users}/>)
+        render(<User userList={users}/>)
         expect( screen.getByText('No user available')).toBeInTheDocument()
     });
 

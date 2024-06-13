@@ -8,7 +8,7 @@ export const handlers = [
       firstName: 'Tohid',
       lastName: 'Hasan',
     })
-  }),
+  })
 
   
 ]

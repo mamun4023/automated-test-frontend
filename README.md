@@ -3,7 +3,7 @@
 Here, All the automated testing technique is applied with the production ready component.
 
 
-# Testing Setup Up
+# Testing Setup
 
 Follow the instruction step by step to reach ultimate goal.
 
@@ -39,6 +39,7 @@ Follow the instruction step by step to reach ultimate goal.
     npm i -D @testing-library/react
     npm i -D jsdom
     npm i -D msw@latest
+    npm i -D cross-fetch/polyfill
   ```
 
 
@@ -47,7 +48,7 @@ Follow the instruction step by step to reach ultimate goal.
 
 ```js
     import "@testing-library/jest-dom/vitest"
-
+    import 'cross-fetch/polyfill';
     import { beforeAll, afterEach, afterAll } from 'vitest'
     import { server } from './mock/server'
 

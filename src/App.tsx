@@ -7,7 +7,7 @@ function App() {
   
       <div className=" h-screen flex justify-center items-center" >
           <TermsAndCondition />
-          <button className=""> sss</button>
+      
        </div>
     
   )

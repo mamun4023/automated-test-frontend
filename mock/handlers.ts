@@ -4,9 +4,9 @@ export const handlers = [
 
   http.get('/users', () => {
     return HttpResponse.json({
-      id: '1',
-      firstName: 'Tohid',
-      lastName: 'Hasan',
+      id: 1,
+      name: 'Tohid',
+      isAdmin : true,
     })
   })
 

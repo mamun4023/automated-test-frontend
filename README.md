@@ -37,9 +37,11 @@ Follow the instruction step by step to reach ultimate goal.
  ```bash
     npm i -D @testing-library/jest-dom
     npm i -D @testing-library/react
+    npm i -D @testing-library/user-event
     npm i -D jsdom
     npm i -D msw@latest
     npm i -D cross-fetch/polyfill
+    
   ```
 
 

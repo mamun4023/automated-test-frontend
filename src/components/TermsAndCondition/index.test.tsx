@@ -1,9 +1,9 @@
 import {screen, render} from '@testing-library/react'
-
+import userEvent from '@testing-library/user-event';
 import  User from './index'
 
 describe('Condition and terms', () => {
-        test('should ', () => {
+        test('Check component status ', () => {
             render(<User />)
             
             // test case for heading 
@@ -22,8 +22,14 @@ describe('Condition and terms', () => {
             expect(button).toBeDisabled()
         });
 
-        test("should enable when checkbox is checked", ()=>{
+        test("User event iteraction", async()=>{
             render(<User />)
+            const checkbox = screen.getByRole('checkbox')
+            
+            const user = userEvent.setup()
+            await user.click(checkbox)
+
+           expect(screen.getByRole('button')).toBeEnabled()
 
         })
 });

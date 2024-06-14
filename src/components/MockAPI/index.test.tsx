@@ -1,6 +1,5 @@
 import { screen, render } from "@testing-library/react";
 import User from ".";
-import axios from "axios";
 
 describe("Mock API test", () => {
     it("None Admin User", async () => {

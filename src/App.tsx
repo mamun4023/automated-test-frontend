@@ -1,12 +1,12 @@
 
-import TermsAndCondition from "./components/TermsAndCondition"
+import OrderSelector from "./components/Selector"
 
 function App() {
  
   return (
   
       <div className=" h-screen flex justify-center items-center" >
-          <TermsAndCondition />
+          <OrderSelector />
       
        </div>
     

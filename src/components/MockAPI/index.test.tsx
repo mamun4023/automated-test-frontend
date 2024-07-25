@@ -5,6 +5,7 @@ describe("Mock API test", () => {
     it("None Admin User", async () => {
         const resp = await fetch("/users");
         const user = await resp.json();
+        console.log(user)
         render(<User user={user} />);
         const editButton = screen.getByRole("button", { name: "Edit" });
         expect(editButton).toBeInTheDocument();

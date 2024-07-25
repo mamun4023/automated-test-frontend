@@ -9,7 +9,7 @@ export const handlers = [
     http.get("/users", () => {
         return HttpResponse.json({
             id: 1,
-            name: "Tohid",
+            name: "Tohid Islam",
             isAdmin: true,
         });
     }),
